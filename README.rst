@@ -22,9 +22,11 @@ Quick start
 
 3. Run ``python manage.py migrate`` to create the datacleaner models.
 
-4. Start the development server and visit http://127.0.0.1:8000/admin
+4. The App uses AWS S3 storage. If you wish to use your S3 storage, you will need to put your S3 credentials into the settings.py file. Or, you can use your own storage.
+
+5. Start the development server and visit http://127.0.0.1:8000/admin
    for admin interface (you'll need the Admin app enabled).
 
-5. Visit http://127.0.0.1:8000/ to clean your data!
+6. Visit http://127.0.0.1:8000/ to clean your data!
 
 DataCleaner App is deployed to Heroku. Please visit https://datacleanser.herokuapp.com/
