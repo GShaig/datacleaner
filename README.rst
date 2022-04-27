@@ -26,3 +26,5 @@ Quick start
    for admin interface (you'll need the Admin app enabled).
 
 5. Visit http://127.0.0.1:8000/ to clean your data!
+
+DataCleaner App is deployed to Heroku. Please visit https://datacleanser.herokuapp.com/
