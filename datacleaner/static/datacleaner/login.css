@@ -1,0 +1,17 @@
+h1 {
+    color: blue;
+}
+
+body {
+    background: white url("images/login.jpg") no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: lime;
+}
+
+p {
+    color: dark;
+    font-weight: bold;
+}

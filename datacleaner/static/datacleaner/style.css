@@ -1,0 +1,28 @@
+h1 {
+    color: white;
+}
+
+body {
+    background: white url("images/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: lime;
+}
+
+p {
+    color: aqua;
+}
+
+section {
+    border: 3px ridge red;
+    width: 70%;
+    border-radius: 0 25px 25px 0;
+}
+
+.differ {
+    border: 3px ridge lime;
+    width: 40%;
+    border-radius: 0 25px 25px 0;
+}

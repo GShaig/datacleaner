@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Cleaner App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'datacleaner/style.css' %}">
+</head>
+<body>
+<h1>Data Cleaner Form</h1>
+<section class="differ">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p><b>Please upload your data file below:</b></p>
+        <section>
+            <p>Please submit only .CSV files.</p>
+            {{ form.upload }}
+        </section>
+        <p><b>Please specify cleaning actions you would like to apply:</b></p>
+        <section>
+            <p>Null data cleaning method (please specify fill value in the box):</p>
+            {{ form.clean_null }}
+            {{ form.filling }}
+        </section>
+        <section>
+            <p>Duplicate removal:</p>
+            {{ form.clean_duplicate }}
+        </section>
+        <p></p>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+{% if file %}
+<div>
+<h2>Download your file below:</h2>
+<a href="https://datacleanser.s3.amazonaws.com/data/output.csv" download>Processed CSV</a>
+</div>
+{% endif %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<p></p>
+<div>
+<a href="https://datacleanser.herokuapp.com/accounts/logout"><button>Sign Out</button></a>
+</div>
+</body>
+</html>
