@@ -2,9 +2,11 @@
 Data Cleaner
 =====
 
-Data Cleaner is a Django app to be used to clean your dirty or raw data. You first need to sign up to the service with your email address. Then you will be able to send your data file to the app and in seconds, the cleaned version will be supplied.
+DataCleaner is a data cleaning app built in Python by Shaig Gafarli. The App to be used to clean your dirty or raw data.
 
-Detailed documentation is in the "docs" directory.
+Using instructions: You first need to sign up to the service with your email address. Then you will be able to send your data file to the app and in seconds, the cleaned version will be supplied. After you're done, you can logout by clicking on 'Sign Out' button. This will direct you to the home page.
+
+Django framework was used to develop this app. Back-end: Python; Storage: AWS S3; Front-end: HTML, CSS & Javascript
 
 Quick start
 -----------
