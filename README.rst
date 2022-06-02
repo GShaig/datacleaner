@@ -6,6 +6,8 @@ DataCleaner is a data cleaning app built in Python by Shaig Gafarli. The App to 
 
 Using instructions: You first need to sign up to the service with your email address. Then you will be able to send your data file to the app and in seconds, the cleaned version will be supplied. After you're done, you can logout by clicking on 'Sign Out' button. This will direct you to the home page.
 
+Used Python libraries: Pandas, django-allauth, Waitress, django-storages
+
 Django framework was used to develop this app. Back-end: Python; Storage: AWS S3; Front-end: HTML, CSS & Javascript
 
 Quick start
