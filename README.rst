@@ -8,7 +8,7 @@ Using instructions: You first need to sign up to the service with your email add
 
 Used Python libraries: Pandas, django-allauth, Waitress, django-storages
 
-Django framework was used to develop this app. Back-end: Python; Storage: AWS S3; Front-end: HTML, CSS & Javascript
+Django framework was used to develop this app. Back-end: Python; Storage: AWS S3; Front-end: HTML & CSS
 
 Quick start
 -----------
